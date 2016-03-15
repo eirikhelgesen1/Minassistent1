@@ -87,9 +87,6 @@
                 android:layout_below="@+id/imageView"
                 android:layout_alignParentStart="true" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -104,15 +101,6 @@
                 android:layout_alignParentStart="true" />
 
 
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/backass"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
 
         </RelativeLayout>
 
