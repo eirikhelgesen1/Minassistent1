@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.daniel.eirik.assistant.MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/topass"
+        android:id="@+id/daniel"/>
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:foregroundGravity="left"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="chrome"
+        android:background="@drawable/assme"
+        android:id="@+id/imageButton"/>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/pappa"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="28dp"
+        android:layout_alignTop="@+id/imageButton"
+        android:onClick="CallIntent"
+        android:layout_toEndOf="@+id/imageButton" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/daniel"
+        android:id="@+id/scrollView"
+        android:background="@drawable/backass">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+
+            <ImageView
+                android:layout_width="430dp"
+                android:layout_height="280dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/heihei"
+                android:onClick="Weather"
+                android:id="@+id/imageView" />
+
+            <ImageView
+                android:layout_width="430dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="280dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/back"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ukelønn"
+                android:id="@+id/ukelønn"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="17dp"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentStart="true" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sette over 100 kroner på sparekonto"
+                android:id="@+id/sparing"
+                android:layout_marginTop="5dp"
+                android:textSize="17dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentStart="true" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Huske å sjekke emneplanen for innleveringer"
+                android:id="@+id/Lekser"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="17dp"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
